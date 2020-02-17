@@ -5,4 +5,15 @@
   <version>1.0.0-Release</version>
   <name>my-tomcat-infrastructure</name>
   <description>how tomcat works ,my source infrastructure</description>
+  
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version>
+        <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  
 </project>

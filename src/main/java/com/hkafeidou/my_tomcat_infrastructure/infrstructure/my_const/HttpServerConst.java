@@ -1,15 +1,20 @@
 package com.hkafeidou.my_tomcat_infrastructure.infrstructure.my_const;
 
+import java.io.File;
+
 /**
  * http server default const
  * @author Hao
  *
  */
 public class HttpServerConst {
+    
+    public static final String SCHEME="http";
+    
     /**
      * web default workspace is application work directory
      */
-    public static final String DEFAULT_WEB_ROOT=System.getProperty("user.dir");
+    public static final String DEFAULT_WEB_ROOT=System.getProperty("user.dir")+ File.separator  + "webroot";
     
     /**
      * shutdwon command 
@@ -30,5 +35,9 @@ public class HttpServerConst {
      * default buffer size
      */
     public static final int DEFAULT_BUFF_SIZE=2048;
+    
+    public static final String DEFAULT_ENCODING="UTF-8";
+    
+    public static final String MY_SERVER_KEY="/servlet/";
     
 }
